@@ -385,6 +385,99 @@
         background: rgba(255,255,255,0.8);
         clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
       }
+
+      @media screen and (max-width: 768px) {
+        .christmas-card {
+          width: 85vw;
+          height: auto;
+          min-height: 60vh;
+          padding: 15px;
+          margin: 20px;
+        }
+
+        .card-title {
+          font-size: 20px;
+        }
+
+        .card-message {
+          font-size: 14px;
+          padding: 0 10px;
+        }
+
+        .card-footer {
+          font-size: 16px;
+        }
+
+        .blinking-text {
+          font-size: 18px;
+          width: 90%;
+          text-align: center;
+        }
+
+        .music-btn {
+          padding: 12px 24px;
+          font-size: 16px;
+          bottom: 30px;
+        }
+
+        .gifts {
+          bottom: 90px;
+        }
+
+        .gift {
+          width: 35px;
+          height: 35px;
+        }
+
+        .holly {
+          width: 40px;
+          height: 40px;
+        }
+
+        .close-btn {
+          width: 25px;
+          height: 25px;
+          font-size: 16px;
+        }
+
+        /* Adjust 3D tree for mobile */
+        body {
+          perspective: 25em;
+        }
+
+        .🌟 {
+          --s: calc((1.25 * var(--p) + var(--q) * var(--sf)) * 1.5em);
+        }
+      }
+
+      /* Small mobile adjustments */
+      @media screen and (max-width: 480px) {
+        .christmas-card {
+          width: 90vw;
+          min-height: 50vh;
+        }
+
+        .card-title {
+          font-size: 18px;
+        }
+
+        .card-message {
+          font-size: 13px;
+        }
+
+        .gifts {
+          gap: 15px;
+        }
+
+        .gift {
+          width: 30px;
+          height: 30px;
+        }
+
+        .🌟 {
+          --s: calc((1.25 * var(--p) + var(--q) * var(--sf)) * 1.2em);
+        }
+      }
     </style>
   </head>
   <body>
@@ -1508,7 +1601,8 @@
             </div>
             <div class="card-body">
               <div class="card-message">
-                Anh thích em ❤️
+                Anh thích em ❤️ <br>
+                Hihi
               </div>
             </div>
             <div class="card-footer">
